@@ -20,6 +20,7 @@ p {
     padding: 0px 20px;
     background-color: #f71e5b;
     border: 1px solid #f71e5b;
+    opacity: 0.80;
     color: white;
     cursor: pointer;
     width: 100%;
@@ -40,7 +41,7 @@ p {
     max-height: 0;
     overflow: auto;
     transition: max-height 0.2s ease-out;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.75);
     color: rgb(59, 59, 59);
     margin-bottom: 5px;
     text-align: left !important;
