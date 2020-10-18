@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f0ae69660c643cc9dcce31718639c21 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8f0ae69660c643cc9dcce31718639c21" ></div>
+        
+</body>
+<script>    
+    
+            var map_8f0ae69660c643cc9dcce31718639c21 = L.map(
+                "map_8f0ae69660c643cc9dcce31718639c21",
+                {
+                    center: [30.0, -50.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_73e2d800414d43b7856c5a7f18ec18bc = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8f0ae69660c643cc9dcce31718639c21);
+        
+    
+            var marker_82d682e3839d4be0b1070ff3b6b10ad5 = L.marker(
+                [51.815606, -0.8084],
+                {}
+            ).addTo(map_8f0ae69660c643cc9dcce31718639c21);
+        
+    
+            var icon_73125d9aa70743bbb4695ac1ba10306d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "#f71e5b", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_82d682e3839d4be0b1070ff3b6b10ad5.setIcon(icon_73125d9aa70743bbb4695ac1ba10306d);
+        
+    
+        var popup_afb439b489c24b7eaad88245f04b9c54 = L.popup({"maxWidth": 250});
+
+        
+            var html_764b6f99c0ce483a9a54b48c877e8f84 = $(`<div id="html_764b6f99c0ce483a9a54b48c877e8f84" style="width: 100.0%; height: 100.0%;"><h4 style="color:#f71e5b;">History</h4><h5 style="color:#f71e5b;">Hometown 1995 to 2014</h5><h6>Aylesbury is my home town - born and raised from 1995. Secondary school is where I first developed my love for geography (well, more specifically physical geography)! I took Geography, Maths and Biology at A Level, which earnt me at place at Edinburgh University to study BSc Geology and Physical Geography.</h6></div>`)[0];
+            popup_afb439b489c24b7eaad88245f04b9c54.setContent(html_764b6f99c0ce483a9a54b48c877e8f84);
+        
+
+        marker_82d682e3839d4be0b1070ff3b6b10ad5.bindPopup(popup_afb439b489c24b7eaad88245f04b9c54)
+        ;
+
+        
+    
+    
+            marker_82d682e3839d4be0b1070ff3b6b10ad5.bindTooltip(
+                `<div>
+                     Aylesbury
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7972111681ae416baaaca3874957ce4b = L.marker(
+                [5.312526, -57.342586],
+                {}
+            ).addTo(map_8f0ae69660c643cc9dcce31718639c21);
+        
+    
+            var icon_a1631ae1bbff4a87b8e4c8e75dde6334 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "#f71e5b", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_7972111681ae416baaaca3874957ce4b.setIcon(icon_a1631ae1bbff4a87b8e4c8e75dde6334);
+        
+    
+        var popup_69677352d2804370a546b4211953449f = L.popup({"maxWidth": 250});
+
+        
+            var html_62943e74ef824a57adf0f9a2b7dfc870 = $(`<div id="html_62943e74ef824a57adf0f9a2b7dfc870" style="width: 100.0%; height: 100.0%;"><h4 style="color:#f71e5b;">Experience</h4><h5 style="color:#f71e5b;">Teacher in 2014/15</h5><h6>I had the pleasure of teaching Biology and Integrated Science at Secondary School level (14-18 year olds) for one year in a village called Orealla, in the jungle of Guyana. Living in such a different area of the world taught me how to be both resilient in the face of challenges and versatile in my outlook. In addition, teaching required me to be confident and assured in my work. I've carried these skills with me into the working world.</h6></div>`)[0];
+            popup_69677352d2804370a546b4211953449f.setContent(html_62943e74ef824a57adf0f9a2b7dfc870);
+        
+
+        marker_7972111681ae416baaaca3874957ce4b.bindPopup(popup_69677352d2804370a546b4211953449f)
+        ;
+
+        
+    
+    
+            marker_7972111681ae416baaaca3874957ce4b.bindTooltip(
+                `<div>
+                     Orealla Village
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d894bd64ff741ac9de096f0624e8a56 = L.marker(
+                [55.953252, -3.188267],
+                {}
+            ).addTo(map_8f0ae69660c643cc9dcce31718639c21);
+        
+    
+            var icon_754d74e2910c47ce930e1b82a99d3bc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mortar-board", "iconColor": "#f71e5b", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_1d894bd64ff741ac9de096f0624e8a56.setIcon(icon_754d74e2910c47ce930e1b82a99d3bc1);
+        
+    
+        var popup_2192020779f046328f49803c1c27559e = L.popup({"maxWidth": 250});
+
+        
+            var html_b94a7d6660dc4e9ea4ae05564975488d = $(`<div id="html_b94a7d6660dc4e9ea4ae05564975488d" style="width: 100.0%; height: 100.0%;"><h4 style="color:#f71e5b;">Education</h4><h5 style="color:#f71e5b;">BSc (GPG) 1st - MSc (GIS) Distinction (projected)</h5><h6>After teaching in Guyana 2014/15 I moved to Edinburgh to complete a BSc in Geology and Physical Geography (GPG) at Edinburgh University. This degree developed my understanding of key Earth systems and critical thinking skills, which allows me to interpret and model various elements of the environment. I graduated from my BSc top of the class - in part due to my <a href='http://rawgisdata.s3.amazonaws.com/jessroberts/Final_Draft.pdf' target='_blank'>dissertation</a> which included my first comprehensive GIS analysis. This work inspired me to specialise in geospatial data and drove my decision to undertake the university's MSc in GIS. I'm currently awaiting my final award grade - based on my coursework average grade my expected outcome is a Distinction.</h6></div>`)[0];
+            popup_2192020779f046328f49803c1c27559e.setContent(html_b94a7d6660dc4e9ea4ae05564975488d);
+        
+
+        marker_1d894bd64ff741ac9de096f0624e8a56.bindPopup(popup_2192020779f046328f49803c1c27559e)
+        ;
+
+        
+    
+    
+            marker_1d894bd64ff741ac9de096f0624e8a56.bindTooltip(
+                `<div>
+                     Edinburgh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b8b617b2f984ed3b8b5855932029b6a = L.marker(
+                [37.7228, 26.793981],
+                {}
+            ).addTo(map_8f0ae69660c643cc9dcce31718639c21);
+        
+    
+            var icon_b7d0116c3b30469c96c6b411497cf1fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "#f71e5b", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_0b8b617b2f984ed3b8b5855932029b6a.setIcon(icon_b7d0116c3b30469c96c6b411497cf1fa);
+        
+    
+        var popup_538e997b64d246729aaf4058790426f4 = L.popup({"maxWidth": 250});
+
+        
+            var html_db36b23de071411a9aa956bc0abf69c1 = $(`<div id="html_db36b23de071411a9aa956bc0abf69c1" style="width: 100.0%; height: 100.0%;"><h4 style="color:#f71e5b;">Experience</h4><h5 style="color:#f71e5b;">GIS Intern - Various Projects</h5><h6>For the summer of 2019 I worked with <a href='https://archipelago.gr/en/' target='_blank'>Archipelagos Institute of Marine Conservation</a> on their GIS Team. I worked on two main projects (1) deploying Maximum Likelihood classification on Sentinel-2 imagery to map shallow seagrass around the Greek Islands (ground truthed by sonar-derived points) and (2) species distribution modelling of the endangered Pinna nobilis using MaxEnt. </h6></div>`)[0];
+            popup_538e997b64d246729aaf4058790426f4.setContent(html_db36b23de071411a9aa956bc0abf69c1);
+        
+
+        marker_0b8b617b2f984ed3b8b5855932029b6a.bindPopup(popup_538e997b64d246729aaf4058790426f4)
+        ;
+
+        
+    
+    
+            marker_0b8b617b2f984ed3b8b5855932029b6a.bindTooltip(
+                `<div>
+                     Samos Island
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b9d2c860e7c49deb8e268efb348f06d = L.marker(
+                [37.724734, 15.029855],
+                {}
+            ).addTo(map_8f0ae69660c643cc9dcce31718639c21);
+        
+    
+            var icon_f4a73819c94545c0b1401d152a6de69f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "#f71e5b", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_5b9d2c860e7c49deb8e268efb348f06d.setIcon(icon_f4a73819c94545c0b1401d152a6de69f);
+        
+    
+        var popup_af295445a2084185a53bae24817992f8 = L.popup({"maxWidth": 250});
+
+        
+            var html_5b247b6f10154bfb936ceaefdcfd8aa8 = $(`<div id="html_5b247b6f10154bfb936ceaefdcfd8aa8" style="width: 100.0%; height: 100.0%;"><h4 style="color:#f71e5b;">Experience</h4><h5 style="color:#f71e5b;">GIS Award with Ecometrica / BSc Dissertation - Mt Etna project</h5><h6>As part of my BSc dissertation, viewable <a href='http://rawgisdata.s3.amazonaws.com/jessroberts/Final_Draft.pdf' target='_blank'>here</a>, I conducted both survey fieldwork in Sicily and my first comprehensive GIS analysis. This work involved intersecting a variety of census and infrastructure geospatial data with modelled volcanic ash fallout to create hazard maps for various eruption scenarios. This work earnt me both the Top of the Class award and the GIS Award internship with <a href='https://ecometrica.com' target='_blank'>Ecometrica</a>. Working with them, I developed an online web application based on my BSc dissertation GIS work, which can be explored <a href='https://volc-vulnerability.ourecosystem.com/interface/' target='_blank'>here</a>.</h6></div>`)[0];
+            popup_af295445a2084185a53bae24817992f8.setContent(html_5b247b6f10154bfb936ceaefdcfd8aa8);
+        
+
+        marker_5b9d2c860e7c49deb8e268efb348f06d.bindPopup(popup_af295445a2084185a53bae24817992f8)
+        ;
+
+        
+    
+    
+            marker_5b9d2c860e7c49deb8e268efb348f06d.bindTooltip(
+                `<div>
+                     Sicily
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f62c30a7c39d4dfe88e4586759e5a41b = L.marker(
+                [45.868313, -84.627566],
+                {}
+            ).addTo(map_8f0ae69660c643cc9dcce31718639c21);
+        
+    
+            var icon_5e2d2dcfc25741e4928f68e6a0d12c6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "#f71e5b", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_f62c30a7c39d4dfe88e4586759e5a41b.setIcon(icon_5e2d2dcfc25741e4928f68e6a0d12c6c);
+        
+    
+        var popup_ffdbf7fa9b2b40a0b3b7d46019820d0c = L.popup({"maxWidth": 250});
+
+        
+            var html_7a83454a3f7e4d8a859ec3e9f8cf16b4 = $(`<div id="html_7a83454a3f7e4d8a859ec3e9f8cf16b4" style="width: 100.0%; height: 100.0%;"><h4 style="color:#f71e5b;">Experience</h4><h5 style="color:#f71e5b;">Bartender</h5><h6>I spent 4 months in the summer of 2016 working as a full-time cocktail bartender in America at a 5* hotel on a historic island called Mackinac Island - a job I'd never previously tried. Safe to say I'm not afraid of challenges, and certainly don't mind travelling far for work. Scotland is no problem!</h6></div>`)[0];
+            popup_ffdbf7fa9b2b40a0b3b7d46019820d0c.setContent(html_7a83454a3f7e4d8a859ec3e9f8cf16b4);
+        
+
+        marker_f62c30a7c39d4dfe88e4586759e5a41b.bindPopup(popup_ffdbf7fa9b2b40a0b3b7d46019820d0c)
+        ;
+
+        
+    
+    
+            marker_f62c30a7c39d4dfe88e4586759e5a41b.bindTooltip(
+                `<div>
+                     Mackinac Island
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba51b9da3e57418689275a7eb947d605 = L.marker(
+                [51.507351, -0.127758],
+                {}
+            ).addTo(map_8f0ae69660c643cc9dcce31718639c21);
+        
+    
+            var icon_ab5790e5d9274373900990dfa1f1ce12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "#f71e5b", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_ba51b9da3e57418689275a7eb947d605.setIcon(icon_ab5790e5d9274373900990dfa1f1ce12);
+        
+    
+        var popup_c97c801c330548bebe3352c2cf90f2f5 = L.popup({"maxWidth": 250});
+
+        
+            var html_b94ab3bae66d403f8920e50bcdbf1c20 = $(`<div id="html_b94ab3bae66d403f8920e50bcdbf1c20" style="width: 100.0%; height: 100.0%;"><h4 style="color:#f71e5b;">Experience</h4><h5 style="color:#f71e5b;">Geospatial Advisor</h5><h6>I'm currently based in London. I've been contracting as a Geospatial Advisor for <a href='https://www.resilienceconstellation.com/' target='_blank'>Resilience Constellation Management Ltd</a> since November 2019. This role involves helping RCML conceptualise and develop geospatial products focussed on climate resilience in a number of industry areas such as agriculture and forestry. This position has put me at the forefront of important conversations around the commercial use of Earth Observation to provide actionable insights. My work requires me to understand how geospatial products are made for all manner of physical phenomenom, which means I am well-equipped to tackle handling of geospatial data for problem-solving.</h6></div>`)[0];
+            popup_c97c801c330548bebe3352c2cf90f2f5.setContent(html_b94ab3bae66d403f8920e50bcdbf1c20);
+        
+
+        marker_ba51b9da3e57418689275a7eb947d605.bindPopup(popup_c97c801c330548bebe3352c2cf90f2f5)
+        ;
+
+        
+    
+    
+            marker_ba51b9da3e57418689275a7eb947d605.bindTooltip(
+                `<div>
+                     London
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e2354bddc164737a13e5fed51c562b6 = L.marker(
+                [-13.254308, 34.301525],
+                {}
+            ).addTo(map_8f0ae69660c643cc9dcce31718639c21);
+        
+    
+            var icon_bdd4748d9a3d47b592bb3879c6580db7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "mortar-board", "iconColor": "#f71e5b", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_5e2354bddc164737a13e5fed51c562b6.setIcon(icon_bdd4748d9a3d47b592bb3879c6580db7);
+        
+    
+        var popup_460c23bf42b74e8786f110b6bac16688 = L.popup({"maxWidth": 250});
+
+        
+            var html_02db5dd003704aa4bf8980a77ef08ec4 = $(`<div id="html_02db5dd003704aa4bf8980a77ef08ec4" style="width: 100.0%; height: 100.0%;"><h4 style="color:#f71e5b;">Education</h4><h5 style="color:#f71e5b;">MSc Thesis - Spatial Inequality in Malawi</h5><h6>For my GIS MSc thesis, I designed and implemented a novel approach to mapping spatial inequality. Through a combination (and subsequent clustering) of nightlights, population density and urban surface data I isolated five community types in Malawi. I mapped these communities and characterised them by correlating their presence against available census data. Code used to conduct this work, as well as some sample outputs can be found <a href='https://github.com/s1434165' target='_blank'>here</a>.</h6></div>`)[0];
+            popup_460c23bf42b74e8786f110b6bac16688.setContent(html_02db5dd003704aa4bf8980a77ef08ec4);
+        
+
+        marker_5e2354bddc164737a13e5fed51c562b6.bindPopup(popup_460c23bf42b74e8786f110b6bac16688)
+        ;
+
+        
+    
+    
+            marker_5e2354bddc164737a13e5fed51c562b6.bindTooltip(
+                `<div>
+                     Malawi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

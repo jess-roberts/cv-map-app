@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://www.geos.ed.ac.uk/~s1434165/static/css/grid.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>CV Map</title>
+  </head>
+
+  <body>
+        <div class="row" id="maprow">
+
+            <div class="short-col" id="info-section">
+              <div class="propic">
+                <div class="circleborder">
+                  <img src="../static/img/me_round.png" alt="Picture of author" class="auth_img">
+                </div>
+                <h2 style=color:#fff>Jess Roberts</h2>
+              </div>
+
+              <!-- 1st Collapsible -->
+              <button form="none" class="collapsible"><h4>About</h4></button>
+              <!-- content -->
+              <div class="content" id="expl-div"><br>
+                <p>Hi there! Welcome to my CV map. This is a site designed to tell you all about me and my projects. Information contained here will take you from where I was born to where I studied and my work behind.</p>
+              </div>
+
+              <!-- 2nd Collapsibles -->
+              <button form="none" class="collapsible"><h4>How To</h4></button>
+              <!-- content -->
+              <div class="content" id="how-to-div"><br>
+                <p>Each point on the map represents either where I was based at the time, or the subject location of a project. Feel free to move around the map and click on the icons to uncover their information!</p>
+              </div>
+
+              <!-- 3rd Collapsibles -->
+              <button form="none" class="collapsible"><h4>More Info</h4></button>
+              <!-- content -->
+              <div class="content" id="more-info-div"><br>
+                <p>If you'd like to find about more, you can visit my <a href="https://www.linkedin.com/in/jess-roberts-63b65918a/" target="_blank" style=color:#f71e5b>LinkedIn</a> or explore some of the code I have up on my <a href="https://github.com/jess-c-roberts" target="_blank" style=color:#f71e5b>GitHub</a>.</p>
+              </div>
+              
+              <!-- Creating collapsible content using JS -->
+              <script>
+              var coll = document.getElementsByClassName("collapsible");
+              var i;
+
+              for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var content = this.nextElementSibling;
+                  if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                  } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                  }
+                });
+              }
+              </script>
+            </div>
+
+            <!-- Map div filled in using Jinja2 templating -->
+            <div class="container-fluid span-1-of-2" id="map1">{% include "map.html" %}</div>
+          </body>
+</html>

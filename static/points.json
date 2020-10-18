@@ -1,0 +1,74 @@
+{
+    "Aylesbury": {
+        "lat" : "51.815606",
+        "lon" : "-0.8084",
+        "pop_up_title": "History",
+        "pop_up_subtitle": "Hometown 1995 to 2014",
+        "pop_up_text": "Aylesbury is my home town - born and raised from 1995. Secondary school is where I first developed my love for geography (well, more specifically physical geography)! I took Geography, Maths and Biology at A Level, which earnt me at place at Edinburgh University to study BSc Geology and Physical Geography.",
+        "icon": "home",
+        "tooltip": "Aylesbury"
+    },
+    "Orealla": {
+        "lat" : "5.312526",
+        "lon" : "-57.342586",
+        "pop_up_title": "Experience",
+        "pop_up_subtitle": "Teacher in 2014/15",
+        "pop_up_text": "I had the pleasure of teaching Biology and Integrated Science at Secondary School level (14-18 year olds) for one year in a village called Orealla, in the jungle of Guyana. Living in such a different area of the world taught me how to be both resilient in the face of challenges and versatile in my outlook. In addition, teaching required me to be confident and assured in my work. I've carried these skills with me into the working world.",
+        "icon": "industry",
+        "tooltip": "Orealla Village"
+    },
+    "Edinburgh": {
+        "lat" : "55.953252",
+        "lon" : "-3.188267",
+        "pop_up_title": "Education",
+        "pop_up_subtitle": "BSc (GPG) 1st - MSc (GIS) Distinction (projected)",
+        "pop_up_text": "After teaching in Guyana 2014/15 I moved to Edinburgh to complete a BSc in Geology and Physical Geography (GPG) at Edinburgh University. This degree developed my understanding of key Earth systems and critical thinking skills, which allows me to interpret and model various elements of the environment. I graduated from my BSc top of the class - in part due to my <a href='http://rawgisdata.s3.amazonaws.com/jessroberts/Final_Draft.pdf' target='_blank'>dissertation</a> which included my first comprehensive GIS analysis. This work inspired me to specialise in geospatial data and drove my decision to undertake the university's MSc in GIS. I'm currently awaiting my final award grade - based on my coursework average grade my expected outcome is a Distinction.",
+        "icon": "mortar-board",
+        "tooltip": "Edinburgh"
+    },
+    "Samos": {
+        "lat" : "37.722800",
+        "lon" : "26.793981",
+        "pop_up_title": "Experience",
+        "pop_up_subtitle": "GIS Intern - Various Projects",
+        "pop_up_text": "For the summer of 2019 I worked with <a href='https://archipelago.gr/en/' target='_blank'>Archipelagos Institute of Marine Conservation</a> on their GIS Team. I worked on two main projects (1) deploying Maximum Likelihood classification on Sentinel-2 imagery to map shallow seagrass around the Greek Islands (ground truthed by sonar-derived points) and (2) species distribution modelling of the endangered Pinna nobilis using MaxEnt. ",
+        "icon": "industry",
+        "tooltip": "Samos Island"
+    },
+    "Sicily": {
+        "lat" : "37.724734",
+        "lon" : "15.029855",
+        "pop_up_title": "Experience",
+        "pop_up_subtitle": "GIS Award with Ecometrica / BSc Dissertation - Mt Etna project",
+        "pop_up_text": "As part of my BSc dissertation, viewable <a href='http://rawgisdata.s3.amazonaws.com/jessroberts/Final_Draft.pdf' target='_blank'>here</a>, I conducted both survey fieldwork in Sicily and my first comprehensive GIS analysis. This work involved intersecting a variety of census and infrastructure geospatial data with modelled volcanic ash fallout to create hazard maps for various eruption scenarios. This work earnt me both the Top of the Class award and the GIS Award internship with <a href='https://ecometrica.com' target='_blank'>Ecometrica</a>. Working with them, I developed an online web application based on my BSc dissertation GIS work, which can be explored <a href='https://volc-vulnerability.ourecosystem.com/interface/' target='_blank'>here</a>.",
+        "icon": "industry",
+        "tooltip": "Sicily"
+    },
+    "Mackinac Island": {
+        "lat" : "45.868313",
+        "lon" : "-84.627566",
+        "pop_up_title": "Experience",
+        "pop_up_subtitle": "Bartender",
+        "pop_up_text": "I spent 4 months in the summer of 2016 working as a full-time cocktail bartender in America at a 5* hotel on a historic island called Mackinac Island - a job I'd never previously tried. Safe to say I'm not afraid of challenges, and certainly don't mind travelling far for work. Scotland is no problem!",
+        "icon": "industry",
+        "tooltip": "Mackinac Island"
+    },
+    "London": {
+        "lat" : "51.507351",
+        "lon" : "-0.127758",
+        "pop_up_title": "Experience",
+        "pop_up_subtitle": "Geospatial Advisor",
+        "pop_up_text": "I'm currently based in London. I've been contracting as a Geospatial Advisor for <a href='https://www.resilienceconstellation.com/' target='_blank'>Resilience Constellation Management Ltd</a> since November 2019. This role involves helping RCML conceptualise and develop geospatial products focussed on climate resilience in a number of industry areas such as agriculture and forestry. This position has put me at the forefront of important conversations around the commercial use of Earth Observation to provide actionable insights. My work requires me to understand how geospatial products are made for all manner of physical phenomenom, which means I am well-equipped to tackle handling of geospatial data for problem-solving.",
+        "icon": "industry",
+        "tooltip": "London"
+    },
+    "Malawi": {
+        "lat" : "-13.254308",
+        "lon" : "34.301525",
+        "pop_up_title": "Education",
+        "pop_up_subtitle": "MSc Thesis - Spatial Inequality in Malawi",
+        "pop_up_text": "For my GIS MSc thesis, I designed and implemented a novel approach to mapping spatial inequality. Through a combination (and subsequent clustering) of nightlights, population density and urban surface data I isolated five community types in Malawi. I mapped these communities and characterised them by correlating their presence against available census data. Code used to conduct this work, as well as some sample outputs can be found <a href='https://github.com/s1434165' target='_blank'>here</a>.",
+        "icon": "mortar-board",
+        "tooltip": "Malawi"
+    }
+}
