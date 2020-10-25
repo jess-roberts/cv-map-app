@@ -29,7 +29,7 @@ class Map(object):
     
     def importPoints(self):
         # Import data to put on base map from json
-        with open('/home/JessCRoberts/mysite/static/points.json') as f:
+        with open('./static/points.json') as f:
             self.data = json.load(f)
 
         for point in self.data.keys():
@@ -45,7 +45,7 @@ class Map(object):
         
     def saveMap(self):
         # Output map with data as html file
-        self.map1.save('/home/JessCRoberts/mysite/templates/map.html')
+        self.map1.save('./templates/map.html')
         return self
 
 if __name__ == '__main__':
