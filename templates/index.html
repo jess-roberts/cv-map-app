@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta property="og:image" content="../static/img/thumbnail.png"/>
     <link rel="image_src" href="../static/img/thumbnail.png"/>
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" href="https://www.geos.ed.ac.uk/~s1434165/static/css/grid.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>CV Map</title>
   </head>
 
@@ -25,26 +25,28 @@
                 </div>
                 <h2 style=color:#fff>Jess Roberts</h2>
               </div>
+              <div class="information_nav" id="topNav">
 
-              <!-- 1st Collapsible -->
-              <button form="none" class="collapsible"><h4>About</h4></button>
-              <!-- content -->
-              <div class="content" id="expl-div"><br>
-                <p>Hi there! Welcome to my CV map. This is a site designed to tell you all about me and my projects. Information contained here will take you from where I was born to where I studied and my work behind.</p>
-              </div>
+                <!-- 1st Collapsible -->
+                <button form="none" class="collapsible"><h4>About</h4></button>
+                <!-- content -->
+                <div class="content" id="expl-div"><br>
+                  <p>Hi there! Welcome to my CV map. This is a site designed to tell you all about me and my projects. Information contained here will take you from where I was born to where I studied and my work behind.</p>
+                </div>
 
-              <!-- 2nd Collapsibles -->
-              <button form="none" class="collapsible"><h4>How To</h4></button>
-              <!-- content -->
-              <div class="content" id="how-to-div"><br>
-                <p>Each point on the map represents either where I was based at the time, or the subject location of a project. Feel free to move around the map and click on the icons to uncover their information!</p>
-              </div>
+                <!-- 2nd Collapsibles -->
+                <button form="none" class="collapsible"><h4>How To</h4></button>
+                <!-- content -->
+                <div class="content" id="how-to-div"><br>
+                  <p>Each point on the map represents either where I was based at the time, or the subject location of a project. Feel free to move around the map and click on the icons to uncover their information!</p>
+                </div>
 
-              <!-- 3rd Collapsibles -->
-              <button form="none" class="collapsible"><h4>More Info</h4></button>
-              <!-- content -->
-              <div class="content" id="more-info-div"><br>
-                <p>If you'd like to find about more, you can visit my <a href="https://www.linkedin.com/in/jess-c-roberts/" target="_blank" style=color:#f71e5b>LinkedIn</a> or explore some of the code I have up on my <a href="https://github.com/jess-c-roberts" target="_blank" style=color:#f71e5b>GitHub</a> (the code underlying this site can be found<a href="https://github.com/jess-c-roberts/cv-map-app" target="_blank" style=color:#f71e5b>here</a>).</p>
+                <!-- 3rd Collapsibles -->
+                <button form="none" class="collapsible"><h4>More Info</h4></button>
+                <!-- content -->
+                <div class="content" id="more-info-div"><br>
+                  <p>If you'd like to find about more, you can visit my <a href="https://www.linkedin.com/in/jess-c-roberts/" target="_blank" style=color:#f71e5b>LinkedIn</a> or explore some of the code I have up on my <a href="https://github.com/jess-c-roberts" target="_blank" style=color:#f71e5b>GitHub</a> (the code underlying this site can be found<a href="https://github.com/jess-c-roberts/cv-map-app" target="_blank" style=color:#f71e5b>here</a>).</p>
+                </div>
               </div>
               
               <!-- Creating collapsible content using JS -->
@@ -64,8 +66,28 @@
                 });
               }
               </script>
+<<<<<<< HEAD
             </div> 
 
+=======
+                  
+            </div>
+            <div class="mob_nav" id="mob_nav">
+              <button form="none" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars fa-2x"></i></button>
+                  
+              <script>
+                function myFunction() {
+                  var x = document.getElementById("mob_nav");
+                  if (x.className === "mob_nav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "mob_nav";
+                  }
+                }
+                </script>
+            </div>
+>>>>>>> mobile_version
             <!-- Map div filled in using Jinja2 templating -->
             <div class="container-fluid span-1-of-2" id="map1">{% include "map.html" %}</div>
           </body>
