@@ -97,3 +97,48 @@ p {
   .propic {
     margin-bottom: 20px;
   }
+
+  .icon {
+    border: 0px;
+    background-color: #f71e5b;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 5px;
+    z-index: 1000;
+  }
+
+  .mob_nav {
+    display: none;
+  }
+  .mob_nav.responsive {
+    z-index: 1000;
+  }
+
+  @media screen and (max-width: 600px) {
+    .mob_nav { 
+      display: block;
+    }
+    .short-col {display: none; }
+    .mob_nav button.icon { 
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .mob_nav.responsive button.icon { 
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .mob_nav.responsive p {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
