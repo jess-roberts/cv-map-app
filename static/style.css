@@ -9,9 +9,9 @@ p {
     margin-top: 0px;
 }
 #map1 {
-    padding: 0px;
-    height:100%;
-    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px;
 }
   :focus {outline:0 !important;}
 
@@ -64,7 +64,7 @@ p {
     top: 10vh;
     left: 3vw;
     width: 20vw;
-    min-width: 130px;
+    min-width: 150px;
     z-index: 1000;
     padding: 0 0px;
     text-align: center;
@@ -101,44 +101,97 @@ p {
   .icon {
     border: 0px;
     background-color: #f71e5b;
+    color: #aaa;
     display: block;
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
     margin: 5px 5px;
-    z-index: 1000;
+    z-index: 1001;
   }
 
   .mob_nav {
     display: none;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
+  
+  .mob_collapsible {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding: 0px 30px;
+    background-color: #f71e5b;
+    border: 1px solid #f71e5b;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    overflow-y: auto;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+  .mob_content {
+    padding: 0px 30px;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.2s ease-out;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(59, 59, 59);
+    margin-bottom: 5px;
+    text-align: left !important;
+  }
+  
+  .mob_collapsible:after {
+    font-size: 13px;
+    color: white;
+    float: right;
+  }
+
+  .mob_nav button.mob_collapsible {
+    display: none;
+  }
+  
   .mob_nav.responsive {
-    z-index: 1000;
+    z-index: 1002;
   }
 
   @media screen and (max-width: 600px) {
-    .mob_nav { 
-      display: block;
+    .mob_nav {
+      display: inline;
+      width: 100%;
+      height: 39px;
+      background-color: #f71e5b;
     }
+    .mob_nav button.mob_collapsible {display: none;}
+    .mob_nav content {display: none;}
     .short-col {display: none; }
     .mob_nav button.icon { 
       display: block;
       position: absolute;
       right: 0;
       top: 0;
+      z-index: 1003;
     }
   }
   
   @media screen and (max-width: 600px) {
+    .mob_nav.responsive {
+      width: 100%;
+    }
     .mob_nav.responsive button.icon { 
-      display: block;
+      display: inline;
       position: absolute;
+      z-index: 1002;
       right: 0;
       top: 0;
     }
-    .mob_nav.responsive p {
-      float: none;
+    .mob_nav.responsive button.mob_collapsible {
+      z-index: 1001;
       display: block;
+      position: relative;
       text-align: left;
+    }
+    .mob_nav.responsive content {
+      width: 100%;
     }
   }
