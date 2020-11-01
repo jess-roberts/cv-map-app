@@ -69,9 +69,12 @@
                   
             </div>
             <div class="mob_nav" id="mob_nav">
-              <h4 style=margin-left:30px;color:#fff>CV Map // Jess Roberts</h4>
-              <button form="none" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars fa-2x"></i></button>
+              <h4 style=margin-left:30px;color:#fff>CV Map - Jess Roberts</h4>
+              <div form="none" class="icon-container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
                 <!-- 1st Collapsible -->
                 <button form="none" class="mob_collapsible"><h4>About</h4></button>
                 <!-- content -->
@@ -93,7 +96,8 @@
                   <p>If you'd like to find about more, you can visit my <a href="https://www.linkedin.com/in/jess-c-roberts/" target="_blank" style=color:#f71e5b>LinkedIn</a> or explore some of the code I have up on my <a href="https://github.com/jess-c-roberts" target="_blank" style=color:#f71e5b>GitHub</a> (the code underlying this site can be found <a href="https://github.com/jess-c-roberts/cv-map-app" target="_blank" style=color:#f71e5b>here</a>).</p>
                 </div>
               <script>
-                function myFunction() {
+                function myFunction(a) {
+                  a.classList.toggle("change");
                   var x = document.getElementById("mob_nav");
                   if (x.className === "mob_nav") {
                     x.className += " responsive";
