@@ -21,8 +21,8 @@
         "lat" : "55.953252",
         "lon" : "-3.188267",
         "pop_up_title": "Education",
-        "pop_up_subtitle": "BSc (GPG) 1st - MSc (GIS) Distinction (projected)",
-        "pop_up_text": "After teaching in Guyana 2014/15 I moved to Edinburgh to complete a BSc in Geology and Physical Geography (GPG) at Edinburgh University. This degree developed my understanding of key Earth systems and critical thinking skills, which allows me to interpret and model various elements of the environment. I graduated from my BSc top of the class - in part due to my <a href='http://rawgisdata.s3.amazonaws.com/jessroberts/Final_Draft.pdf' target='_blank'>dissertation</a> which included my first comprehensive GIS analysis. This work inspired me to specialise in geospatial data and drove my decision to undertake the university's MSc in GIS. I'm currently awaiting my final award grade - based on my coursework average grade my expected outcome is a Distinction. I'm currently also working part-time to remotely assist with the python practical sessions for the GIS MSc course 'Technological Infrastructures for GIS'.",
+        "pop_up_subtitle": "BSc (GPG) 1st - MSc (GIS) Distinction",
+        "pop_up_text": "After teaching in Guyana 2014/15 I moved to Edinburgh to complete a BSc in Geology and Physical Geography (GPG) at Edinburgh University. This degree developed my understanding of key Earth systems and critical thinking skills, which allows me to interpret and model various elements of the environment. I graduated from my BSc top of the class - in part due to my <a href='http://rawgisdata.s3.amazonaws.com/jessroberts/Final_Draft.pdf' target='_blank'>dissertation</a> which included my first comprehensive GIS analysis. This work inspired me to specialise in geospatial data and to undertake the university's MSc in GIS for which I was awarded a Distinction. I currently also remotely assist with the python practical sessions for the GIS MSc course 'Technological Infrastructures for GIS'.",
         "icon": "mortar-board",
         "tooltip": "Edinburgh"
     },
@@ -44,21 +44,12 @@
         "icon": "industry",
         "tooltip": "Sicily"
     },
-    "Mackinac Island": {
-        "lat" : "45.868313",
-        "lon" : "-84.627566",
-        "pop_up_title": "Experience",
-        "pop_up_subtitle": "Bartender",
-        "pop_up_text": "I spent 4 months in the summer of 2016 working as a full-time cocktail bartender in America at a 5* hotel on a historic island called Mackinac Island - a job I'd never previously tried. Safe to say I'm not afraid of challenges, and certainly don't mind travelling for work occasionally!",
-        "icon": "industry",
-        "tooltip": "Mackinac Island"
-    },
     "London": {
         "lat" : "51.507351",
         "lon" : "-0.127758",
         "pop_up_title": "Experience",
         "pop_up_subtitle": "Geospatial Advisor",
-        "pop_up_text": "I'm currently based in London. I've been contracting as a Geospatial Advisor for <a href='https://www.resilienceconstellation.com/' target='_blank'>Resilience Constellation Management Ltd</a> since November 2019. This role involves helping RCML conceptualise and develop geospatial products focussed on climate resilience in a number of industry areas such as agriculture and forestry. This position has put me at the forefront of important conversations around the commercial use of Earth Observation to provide actionable insights. My work requires me to understand how geospatial products are made for all manner of physical phenomenom, which means I am well-equipped to tackle handling of geospatial data for problem-solving.",
+        "pop_up_text": "I'm currently based in London. I've been contracting as a Geospatial Advisor for <a href='https://www.resilienceconstellation.com/' target='_blank'>Resilience Constellation Management Ltd</a> since November 2019. This role involves helping RCML conceptualise and develop geospatial products focussed on climate resilience in a number of industries. This position has put me at the forefront of important conversations around the commercial use of Earth Observation to provide actionable insights.",
         "icon": "industry",
         "tooltip": "London"
     },

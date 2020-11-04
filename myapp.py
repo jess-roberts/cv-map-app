@@ -24,12 +24,12 @@ class Map(object):
     
     def makeMap(self):
         # Create base map
-        self.map1 = folium.Map(location = [30,-50], tiles='CartoDB dark_matter', zoom_control=False, zoom_start = 3)
+        self.map1 = folium.Map(location = [20, 7], tiles='CartoDB dark_matter', zoom_control=False, zoom_start = 3)
         self.importPoints()
     
     def importPoints(self):
         # Import data to put on base map from json
-        with open('./static/points.json') as f:
+        with open('/home/JessCRoberts/mysite/static/points.json') as f:
             self.data = json.load(f)
 
         for point in self.data.keys():
@@ -45,7 +45,7 @@ class Map(object):
         
     def saveMap(self):
         # Output map with data as html file
-        self.map1.save('./templates/map.html')
+        self.map1.save('/home/JessCRoberts/mysite/templates/map.html')
         return self
 
 if __name__ == '__main__':
